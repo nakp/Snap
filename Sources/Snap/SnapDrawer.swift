@@ -61,6 +61,7 @@ public struct SnapDrawer<StateType: SnapState, Background : View, Content: View>
                 
                 Spacer()
             }
+            .frame(maxWidth: .infinity)
         }
         .frame(height: UIScreen.main.bounds.height)
         .clipShape(RoundedRectangle(cornerRadius: 20))
