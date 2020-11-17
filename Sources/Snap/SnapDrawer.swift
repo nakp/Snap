@@ -78,7 +78,7 @@ public struct SnapDrawer<StateType: SnapState, Background : View, Content: View>
 
 struct Handle : View {
     var body: some View {
-        RoundedRectangle(cornerRadius: handleThickness / 2.0)
+        Capsule()
             .frame(width: 40, height: handleThickness)
             .foregroundColor(Color.secondary)
             .padding(.vertical, handleVerticalPadding)
