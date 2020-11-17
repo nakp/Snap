@@ -56,7 +56,7 @@ public struct SnapDrawer<StateType: SnapState, Background : View, Content: View>
             currentResult.state.visible.map { background($0).edgesIgnoringSafeArea(.all) }
 
             VStack(spacing: 0) {
-                currentResult.state.visible != nil ? Handle() : nil
+                Handle()
                 currentResult.state.visible.map { content($0).frame(height: currentResult.contentHeight) }
                 
                 Spacer()
